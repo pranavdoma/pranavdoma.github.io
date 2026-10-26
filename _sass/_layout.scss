@@ -89,6 +89,70 @@
     }
 }
 
+.sport-line {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 0.7rem;
+}
+
+.league {
+    font-weight: 700;
+    min-width: 2.8rem;
+    color: $text-primary;
+}
+
+.tag {
+    display: inline-block;
+    padding: 0.12rem 0.6rem;
+    border-radius: 999px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.45;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: none;
+        filter: brightness(1.15);
+    }
+}
+
+.tag.bears {
+    background: #0b162a;
+    color: #c83803;
+
+    &:hover { color: #c83803; }
+}
+
+.tag.giants {
+    background: #0b2265;
+    color: #a71930;
+
+    &:hover { color: #a71930; }
+}
+
+.tag.yankees {
+    background: #0c2340;
+    color: #ffffff;
+
+    &:hover { color: #ffffff; }
+}
+
+.tag.sox {
+    background: #27251f;
+    color: #c4ced4;
+
+    &:hover { color: #c4ced4; }
+}
+
+.tag.cubs {
+    background: #0e3386;
+    color: #cc3433;
+
+    &:hover { color: #cc3433; }
+}
+
 .when {
     font-family: $sans;
     font-size: 0.92rem;
