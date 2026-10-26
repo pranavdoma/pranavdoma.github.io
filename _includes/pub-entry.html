@@ -1,0 +1,25 @@
+<article class="pub{% unless include.pub.image %} no-fig{% endunless %}" id="{{ include.pub.id }}">
+    {% if include.pub.image %}
+    <a class="pub-fig{% if include.pub.fit %} fit-{{ include.pub.fit }}{% endif %}" href="{{ include.pub.links[0].url }}" target="_blank" rel="noopener">
+        <img src="{{ include.pub.image | relative_url }}" alt="{{ include.pub.image_alt }}">
+    </a>
+    {% endif %}
+    <div class="pub-body">
+        <h3><a href="{{ include.pub.links[0].url }}" target="_blank" rel="noopener">{{ include.pub.title }}</a></h3>
+        <p class="pub-authors">
+            {%- assign n = include.pub.authors | size -%}
+            {%- for author in include.pub.authors -%}
+                {%- if forloop.last and n > 1 %} and {% endif -%}
+                {%- if author.me -%}<strong>{{ author.name }}</strong>{%- else -%}{{ author.name }}{%- endif -%}
+                {%- unless forloop.last -%}{%- if n > 2 -%},{%- endif %} {% endunless -%}
+            {%- endfor -%}
+        </p>
+        <p class="pub-venue"><em>{{ include.pub.venue }}</em>{% if include.pub.note %}, {{ include.pub.note }}{% endif %}, {{ include.pub.year }}.</p>
+        <p class="pub-summary">{{ include.pub.summary }}</p>
+        <p class="pub-links">
+            {% for link in include.pub.links %}
+            <a class="text-link" href="{{ link.url }}" target="_blank" rel="noopener">{{ link.label }}</a>
+            {% endfor %}
+        </p>
+    </div>
+</article>

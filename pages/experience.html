@@ -1,89 +1,100 @@
 ---
 layout: experience
-title: Professional Experience
-
+title: Experience
+description: Research and engineering appointments, education, and talks.
 ---
 
-<!-- HCLTech America -->
-<div class="project-card">
-    <div class="experience-header">
-        <img class="company-logo" src="/assets/images/experience/hcltech.jpg" alt="HCLTech Logo">
+<section class="cv-block">
+    <h2>Appointments</h2>
+
+    <article class="cv-item">
+        <img class="org-logo" src="{{ '/assets/images/experience/hcltech.jpg' | relative_url }}" alt="HCLTech">
         <div>
-            <h3>Lead Consultant (Autonomous Vehicles & Robotics)</h3>
-            <h4>HCLTech America</h4>
-            <p class="date">Feb 2026 – Present</p>
-        </div>
-    </div>
-    <div class="project-content">
-        <div class="project-details">
+            <h3>Robotics Application Engineer, Autonomous Vehicles and Robotics</h3>
+            <p class="org">HCLTech America <span class="where">· New Brunswick</span></p>
+            <p class="date">February 2026 – present</p>
             <ul>
-                <li>Leading end-to-end autonomous vehicle and robotics solutions, architecting systems that balance latency, safety, and compute constraints across sensors, perception, and decision-making</li>
-                <li>Exploring VLA models including NVIDIA Alpamayo for advanced robotics perception and autonomous vehicle vision tasks, with simulations in CARLA, IsaacSim and Omniverse</li>
-                <li>Leading the Vision Pilot project within the Autoware Foundation, driving the transition from modular architectures to end-to-end systems, with responsibility for model development, dataset curation, pipeline optimization, and production releases.</li>
+                <li>Moved perception stacks from modular pipelines toward end-to-end driving, including auto-labeling that uses existing camera and radar models as supervision.</li>
+                <li>Developed and released <a href="https://github.com/autowarefoundation/vision_pilot">VisionPilot</a>, an open-source Level-2 assistance system that builds a 3D estimate of the road from a single front camera. Longitudinal and lateral networks are fused with Kalman and particle filtering, and the stack is tested in SODA Sim, CARLA, and AlpaSim.</li>
+                <li>Built a physical-AI driving pipeline on NVIDIA’s Alpa stack: non-NVIDIA logs reconstructed through NCore and NuRec, Fixer novel-view rendering, and closed-loop Alpamayo driving with a reasoning overlay, on RTX PRO 6000 and NVIDIA Thor.</li>
+                <li>Built inspection and manipulation demonstrations on the Kinetic AI platform, including vision-language phone testing and policies using ACT, VLA-JEPA, and NVIDIA GR00T with UR arms, a Trossen WidowX, and a Unitree Go2.</li>
             </ul>
         </div>
-    </div>
-</div>
+    </article>
 
-<!-- MultiCoreWare -->
-<div class="project-card">
-    <div class="experience-header">
-        <img class="company-logo" src="/assets/images/experience/MulticoreWare_Logo.jpg" alt="MultiCoreWare Logo">
+    <article class="cv-item">
+        <img class="org-logo" src="{{ '/assets/images/experience/MulticoreWare_Logo.jpg' | relative_url }}" alt="MultiCoreWare">
         <div>
-            <h3>Research Engineer (Embedded Systems, Sensor Engineering)</h3>
-            <h4>MultiCoreWare</h4>
-            <p class="date">2024 – 2026</p>
-        </div>
-    </div>
-    <div class="project-content">
-        <div class="project-details">
+            <h3>Research Engineer, Embedded Systems and Sensor Engineering</h3>
+            <p class="org">MultiCoreWare <span class="where">· Urbana-Champaign</span></p>
+            <p class="date">October 2024 – February 2026</p>
             <ul>
-                <li>Contributing to Autoware Foundation on real-time obstacle perception, working on vision-based segmentation, depth estimation, and path prediction for autonomous driving. Focused on training, data auditing, model quantization via ONNX Runtime for real-time inference. </li>
-                <li>Built LLVM-MCToll pipelines for static ARM↔️x86 binary translation; validated APKs in Android Studio</li>
-                <li>Developed Linux kernel modules for ACPI device enumeration and debugged low-level I2C/UART drivers</li>
+                <li>Released VisionPilot v0.5 and v0.9: a multithreaded Level-2 perception pipeline with closest-in-path obstacle detection, RSS-based safe distance, and a lane tracker feeding a PID lateral controller.</li>
+                <li>Built a portable deployment path for the same models across ROS 2, QNX, Zenoh, and iceoryx, with CUDA, HIP, ONNX Runtime, and TensorRT, including quantization-aware and post-training quantization.</li>
+                <li>Ran real-vehicle ADAS demonstrations with automotive OEMs.</li>
+                <li>Modeled multi-sensor FMCW radar and lidar, including sparse MIMO array design, and contributed to an LLVM-MCToll proof of concept for static ARM–x86 translation and to Linux kernel work on ACPI, I2C, and UART.</li>
             </ul>
         </div>
-    </div>
-</div>
+    </article>
 
-<!-- NYU -->
-<div class="project-card">
-    <div class="experience-header">
-        <img class="company-logo" src="/assets/images/experience/nyu.png" alt="NYU Logo">
+    <article class="cv-item">
+        <img class="org-logo" src="{{ '/assets/images/experience/nyu.png' | relative_url }}" alt="New York University">
         <div>
             <h3>Assistant Research Scientist</h3>
-            <h4>New York University</h4>
-            <p class="date">2024</p>
-        </div>
-    </div>
-    <div class="project-content">
-        <div class="project-details">
+            <p class="org">Agile Safe Autonomous Systems Lab, New York University</p>
+            <p class="date">May 2024 – October 2024</p>
             <ul>
-                <li>Developed LLM-guided motion planning that reduced computational nodes by 27.1%</li>
-                <li>Built multi-agent architectures for high-dynamic vehicle maneuvers using physics-informed control</li>
-                <li>Improved maneuver success rates to 90% through simulation validation of LLM-planner outputs</li>
+                <li>Developed a language-guided motion planner that cut the number of computational nodes by 27.1% and improved instruction compliance by 39.1% over the baseline planners.</li>
+                <li>Designed a multi-agent language-model architecture for high-dynamic vehicle maneuvers. Physics-based checking of the proposed controls raised maneuver success to 90% in simulation.</li>
             </ul>
         </div>
-    </div>
-</div>
+    </article>
 
-<!-- TRC Robotics -->
-<div class="project-card">
-    <div class="experience-header">
-        <img class="company-logo" src="/assets/images/experience/trc.jpg" alt="TRC Robotics Logo">
+    <article class="cv-item">
+        <img class="org-logo" src="{{ '/assets/images/experience/trc.jpg' | relative_url }}" alt="TRC Robotics">
         <div>
-            <h3>Robotics Software Engineer</h3>
-            <h4>TRC Robotics</h4>
-            <p class="date">2023 – 2024</p>
-        </div>
-    </div>
-    <div class="project-content">
-        <div class="project-details">
+            <h3>Robotics Software Engineer and Business Development Associate</h3>
+            <p class="org">TRC Robotics <span class="where">· Remote</span></p>
+            <p class="date">October 2023 – October 2024</p>
             <ul>
-                <li>Deployed ROS-based robotics infrastructure using Docker/Podman containers and Grafana dashboards</li>
-                <li>Managed secure access via Keycloak and improved CI/CD for real-time robotic system updates</li>
-                <li>Migrated robotic backend services and monitored system health using custom metrics pipelines</li>
+                <li>Deployed ROS services in Docker and Podman, with Grafana dashboards and Keycloak for access control.</li>
+                <li>Migrated backend services and tightened CI/CD for updates to the robot stack.</li>
             </ul>
         </div>
-    </div>
-</div>
+    </article>
+</section>
+
+<section class="cv-block">
+    <h2>Education</h2>
+    <article class="cv-item">
+        <img class="org-logo" src="{{ '/assets/images/experience/nyu.png' | relative_url }}" alt="New York University">
+        <div>
+            <h3>M.S., Computer Engineering</h3>
+            <p class="org">New York University, Tandon School of Engineering</p>
+            <p class="date">August 2022 – May 2024 · CGPA 3.73</p>
+            <p class="degree-note">Robot perception, computing systems architecture, real-time embedded systems, deep learning, digital signal processing, and machine learning.</p>
+        </div>
+    </article>
+    <article class="cv-item">
+        <div class="org-mark" aria-hidden="true">SVNIT</div>
+        <div>
+            <h3>B.Tech., Electrical Engineering</h3>
+            <p class="org">Sardar Vallabhbhai National Institute of Technology, Surat</p>
+            <p class="date">July 2017 – June 2021 · CGPA 7.24</p>
+        </div>
+    </article>
+</section>
+
+<section class="cv-block">
+    <h2>Talks</h2>
+    <ul class="talks">
+        <li>
+            <span class="when">2026</span>
+            <span>Spotlight. Geometry-first generative worlds as simulation substrates in bronchoscopy. SurgTwin Workshop, IROS.</span>
+        </li>
+        <li>
+            <span class="when">2025</span>
+            <span>Oral. ManeuverGPT: agentic control for safe autonomous stunt maneuvers. IROS, Hangzhou.</span>
+        </li>
+    </ul>
+</section>

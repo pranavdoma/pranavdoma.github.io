@@ -1,29 +1,28 @@
-// Colors
-// Primary Color Palette (Light to Dark)
-$color-lightest: #B39BB5;  // Lighter mauve
-$color-light: #997a8d;     // Mauve
-$color-medium: #6A6A98;    // Dusty blue
-$color-dark: #514B7C;      // Deep purple-blue
-$color-darkest: #654762;   // Deep mauve
+$color-lightest: #e7eef6;
+$color-light: #4d6d92;
+$color-medium: #1e3a5f;
+$color-dark: #16304f;
+$color-darkest: #10243c;
 
-// Main Theme Colors
-$primary-color: $color-medium;     // Main interactive elements
-$primary-hover: $color-lightest;   // Hover states
-$primary-active: $color-light;     // Active/pressed states
-$accent-color: $color-dark;        // Secondary emphasis
-$subtle-accent: $color-darkest;    // Subtle decorative elements
+$primary-color: #1772d0;
+$primary-hover: #f09228;
+$primary-active: #12579e;
+$accent-color: $color-medium;
+$subtle-accent: #c5d0de;
 
-// Base Colors
-$background-dark: #121212;
-$background-card: #1e1e1e;
-$text-primary: #ffffff;
-$text-secondary: #b3b3b3;
+$background-dark: #f7f5f2;
+$background-card: #fffcf9;
+$paper: #fffcf9;
+$line: #e4ddd4;
+$text-primary: #1c1917;
+$text-secondary: #5c564e;
+$muted: #5c564e;
 
-// Typography
-$font-stack: 'Segoe UI', system-ui, -apple-system, sans-serif;
-$line-height: 1.6;
+$serif: "Lato", Verdana, Helvetica, sans-serif;
+$sans: "Lato", Verdana, Helvetica, sans-serif;
+$font-stack: "Lato", Verdana, Helvetica, sans-serif;
+$line-height: 1.5;
 
-// Layout
-$nav-height: 60px;
-$max-width: 1400px;
-$border-radius: 12px;
+$nav-height: 64px;
+$max-width: 980px;
+$border-radius: 4px;

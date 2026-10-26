@@ -3,14 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}</title>
+    <title>{% if page.url == '/' %}{{ site.title }}{% else %}{{ page.title }} · {{ site.title }}{% endif %}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
 </head>
 <body>
     {% include navbar.html %}
-    
     <main class="main-content">
         {{ content }}
     </main>
+    <footer class="site-footer">
+        <div class="wrap footer-inner">
+            <span>{{ site.author }}</span>
+            <span>
+                <a href="mailto:{{ site.email }}">Email</a>
+                <a href="https://scholar.google.com/citations?user={{ site.social_links.google_scholar }}&hl=en">Scholar</a>
+                <a href="https://github.com/{{ site.social_links.github }}">GitHub</a>
+                <a href="{{ '/assets/resume.pdf' | relative_url }}">Resume</a>
+            </span>
+        </div>
+    </footer>
 </body>
 </html>

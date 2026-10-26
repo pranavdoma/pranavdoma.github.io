@@ -1,0 +1,156 @@
+- id: synairg
+  title: "Geometry-First Generative Worlds as Simulation Substrates in Bronchoscopy"
+  authors:
+    - name: Chris von Csefalvay
+    - name: Pranav Doma
+      me: true
+    - name: Tamas Foldi
+  venue: "IROS Workshop on Surgical Digital Twins (SurgTwin)"
+  note: "Spotlight"
+  year: 2026
+  image: /assets/images/publications/synairg.jpg
+  image_alt: "Depth, surface normals, shading, and airway centerlines for three synthetic bronchoscopy cases."
+  fit: contain
+  summary: "SynAirG turns thoracic CT into quality-checked airway meshes, centreline graphs, scope trajectories, and pose-aligned depth, normal, and shading streams for bronchoscopy SLAM and robot learning."
+  links:
+    - label: Paper
+      url: https://utkauraslab.github.io/surgtwin-workshop.github.io/papers/Geometry-First_Generative_Worlds_as_Simulation_Substrates_in_Bronchoscopy.pdf
+    - label: Project
+      url: https://hcltech-robotics.github.io/synairg/
+    - label: Code
+      url: https://github.com/hcltech-robotics/synairg
+  selected: true
+
+- id: humanoids
+  title: "Immersive Social Interaction with VR and LLM-Assisted Humanoids"
+  authors:
+    - name: Niraj Pudasaini
+    - name: Geeta Chandra Raju Bethala
+    - name: Pranav Doma
+      me: true
+    - name: Anthony Tzes
+    - name: Yi Fang
+  venue: "arXiv:2607.07430"
+  year: 2026
+  image: /assets/images/publications/humanoid.jpg
+  image_alt: "Unitree H1 humanoid teleoperated through pick-and-place and a social cube-passing task."
+  fit: contain
+  summary: "An immersive teleoperation interface for a Unitree H1 that combines language-assisted locomotion, Vision Pro hand tracking, and bidirectional audio, and records multimodal data for later imitation learning."
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2607.07430
+    - label: PDF
+      url: https://arxiv.org/pdf/2607.07430
+  selected: true
+
+- id: maneuvergpt
+  title: "ManeuverGPT: Agentic Control for Safe Autonomous Stunt Maneuvers"
+  authors:
+    - name: Shawn Azdam
+    - name: Pranav Doma
+      me: true
+    - name: Aliasghar Moj Arab
+  venue: "IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)"
+  note: "Oral"
+  year: 2025
+  image: /assets/images/publications/mangpt.jpg
+  image_alt: "ManeuverGPT agent loop for generating and checking a high-dynamic vehicle maneuver."
+  fit: contain
+  summary: "A multi-agent language-model controller that proposes and physics-checks parameters for high-dynamic maneuvers, including J-turns, in the CARLA simulator."
+  links:
+    - label: IEEE
+      url: https://ieeexplore.ieee.org/document/11246539
+    - label: arXiv
+      url: https://arxiv.org/abs/2503.09035
+    - label: Project
+      url: https://shi-on.github.io/ManeuverGPT/
+    - label: Code
+      url: https://github.com/SHi-ON/ManeuverGPT
+    - label: Video
+      url: https://www.youtube.com/playlist?list=PLMcjQ-k9Bg8RPpmOUefSjn8F1C1TC2hTX
+  selected: true
+
+- id: patent-trust
+  title: "Trust through Transparency: Explainable Social Navigation for Autonomous Mobile Robots via Vision-Language Models"
+  authors:
+    - name: Aliasghar Arab
+    - name: Kiruthiga Chandra Shekar
+    - name: Chinmay Prashanth
+    - name: Pranav Doma
+      me: true
+    - name: Vikram Subramaniam
+    - name: Katsuo Kurabayashi
+    - name: Oluwadamilola Sotomi
+    - name: Devika Kodi
+  venue: "U.S. Patent Application 19/199,877"
+  note: "Publ. No. 2025/0342326"
+  year: 2025
+  summary: "A multimodal explainability module that pairs vision-language models with heatmaps so a mobile robot can describe, in language, what it sees and why it is moving."
+  links:
+    - label: Patent
+      url: https://patents.google.com/patent/US20250342326A1/en
+  selected: false
+
+- id: slice
+  title: "LLM-Enhanced Path Planning: Safe and Efficient Autonomous Navigation with Instructional Inputs"
+  authors:
+    - name: Pranav Doma
+      me: true
+    - name: Aliasghar Arab
+    - name: Xuesu Xiao
+  venue: "arXiv:2412.02655"
+  year: 2024
+  image: /assets/images/publications/slice.jpg
+  image_alt: "A mobile robot in a shared room, with the language-derived cost map overlaid on the floor."
+  fit: cover
+  summary: "SLICE turns natural-language navigation instructions into cost constraints for classical planners, so instruction following improves without giving up the planner's safety properties."
+  links:
+    - label: arXiv
+      url: https://arxiv.org/abs/2412.02655
+    - label: PDF
+      url: https://arxiv.org/pdf/2412.02655
+    - label: Code
+      url: https://github.com/pranavdoma/SLICE
+  selected: true
+
+- id: roman
+  title: "Explainable Autonomous Mobile Robots: Interface and Socially Aware Learning"
+  authors:
+    - name: Kiruthiga C. Shekar
+    - name: Pranav Doma
+      me: true
+    - name: Chinmay Prashanth
+    - name: Vikram Subramaniam
+    - name: Aliasghar Arab
+  venue: "IEEE International Conference on Robot and Human Interactive Communication (RO-MAN), Late-Breaking Report"
+  year: 2024
+  image: /assets/images/publications/roman.jpg
+  image_alt: "A mobile robot moving through a campus hallway, with its explained path drawn on the floor."
+  fit: cover
+  summary: "Interfaces and a campus study of how self-explanations change the way people accept a mobile robot in shared indoor spaces."
+  links:
+    - label: Preprint
+      url: https://doi.org/10.36227/techrxiv.171778972.23843385/v2
+  selected: false
+
+- id: wind
+  title: "A Review on Wind Farm Reliability with Hybrid Cable Connection"
+  authors:
+    - name: Vasundhara Mahajan
+    - name: Atul Kumar Yadav
+    - name: Pranav Doma
+      me: true
+    - name: Ankireddy Aravind Reddy
+    - name: Soumya Mudgal
+    - name: Lalit Tak
+  venue: "Energy Conversion Systems: An Overview, Nova Science Publishers"
+  note: "ISBN 978-1-53619-200-1"
+  year: 2021
+  image: /assets/images/publications/wind.jpg
+  image_alt: "Hybrid wind-farm network: conventional generation, wind source, extra cables, and the load."
+  fit: contain
+  summary: "A book chapter on reliability for wind farms that collect power through hybrid cable connections."
+  links:
+    - label: Chapter
+      url: https://www.researchgate.net/publication/349426326_A_Review_on_Wind_Farm_Reliability_with_Hybrid_Cable_Connection
+  selected: false

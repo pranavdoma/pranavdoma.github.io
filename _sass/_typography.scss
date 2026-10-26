@@ -1,70 +1,45 @@
-h1, h2, h3 {
-    color: $primary-color;
-    margin-top: 0;
+h1, h2, h3, h4 {
+    font-family: $font-stack;
+    color: $text-primary;
+    font-weight: 400;
+    letter-spacing: 0;
 }
 
 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 32px;
+    line-height: 1.2;
+    margin: 0 0 0.35rem;
 }
 
 h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    border-bottom: 2px solid $primary-color;
-    padding-bottom: 0.5rem;
+    font-size: 22px;
+    font-weight: 400;
+    margin: 2.2rem 0 0.75rem;
+    padding-bottom: 0.35rem;
+    border-bottom: 1px solid $line;
 }
 
 h3 {
-    font-size: 1.8rem;
-    margin: 0 0 20px 0;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin: 0 0 0.35rem;
 }
 
-a {
-    color: $primary-color;
-    text-decoration: none;
-    
-    &:hover {
-        text-decoration: underline;
-    }
+p {
+    margin: 0 0 1rem;
 }
 
-.date {
-    color: $text-secondary;
-    font-size: 0.9rem;
-    margin: 5px 0;
-}
+.page-header {
+    padding-top: 42px;
 
-.section-header {
-    text-align: center;
-    margin-bottom: 60px;
-    background: linear-gradient(45deg, rgba(0,0,0,0.9), rgba(0,0,0,0.7));
-    padding: 40px 20px;
-    border-radius: $border-radius;
-    position: relative;
-    overflow: hidden;
-    
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background: radial-gradient(circle at 50% 50%, $primary-color 0%, transparent 50%);
-        opacity: 0.1;
-        z-index: 0;
+    h1 {
+        margin-bottom: 0.4rem;
     }
-    
-    h1, p {
-        position: relative;
-        z-index: 1;
-    }
-    
+
     p {
-        color: $text-secondary;
-        font-size: 1.2rem;
-        max-width: 600px;
-        margin: 10px auto 0;
+        color: $muted;
+        max-width: 40rem;
+        margin-bottom: 0.4rem;
     }
 }

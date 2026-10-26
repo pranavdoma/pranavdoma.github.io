@@ -1,7 +1,43 @@
 ---
 layout: projects
 title: Projects
+description: Open-source systems and earlier research projects, with the code and recordings that go with them.
 ---
+
+<article class="project-card">
+    <h3>VisionPilot</h3>
+    <div class="project-content">
+        <p class="project-description">
+            An open-source Level-2 driver-assistance stack in the Autoware Foundation. A single front camera feeds longitudinal and lateral networks, fused with Kalman and particle filtering for state estimation. The system is exercised in SODA Sim, CARLA, and AlpaSim, including high-speed and sharp-turn cases.
+        </p>
+        <ul class="project-details">
+            <li>Closest-in-path obstacle detection, RSS safe distance, and a lane tracker for lateral control</li>
+            <li>Deployment across ROS 2, QNX, Zenoh, and iceoryx, with ONNX Runtime and TensorRT</li>
+            <li>Quantization, data auditing, and real-vehicle demonstrations with OEMs</li>
+        </ul>
+        <p class="pub-links">
+            <a class="text-link" href="https://github.com/autowarefoundation/vision_pilot">Repository</a>
+            <a class="text-link" href="https://github.com/autowarefoundation/vision_pilot/commits?author=pranavdoma">My commits</a>
+        </p>
+    </div>
+</article>
+
+<article class="project-card">
+    <h3>SynAirG</h3>
+    <div class="project-content">
+        <div class="project-media">
+            <img src="{{ '/assets/images/publications/synairg.jpg' | relative_url }}" alt="Rendered bronchoscopy worlds from SynAirG">
+        </div>
+        <p class="project-description">
+            A manifest-driven pipeline from thoracic CT to bronchoscopy-ready meshes, scope trajectories, and pose-aligned depth, normals, and shading. Geometry stays fixed while appearance can change, which is the property the downstream SLAM and learning code needs.
+        </p>
+        <p class="pub-links">
+            <a class="text-link" href="https://hcltech-robotics.github.io/synairg/">Project</a>
+            <a class="text-link" href="https://github.com/hcltech-robotics/synairg">Code</a>
+            <a class="text-link" href="{{ '/pages/publications/#synairg' | relative_url }}">Paper</a>
+        </p>
+    </div>
+</article>
 
 <!-- RL-Based Quadruped -->
 <div class="project-card">
@@ -21,7 +57,7 @@ title: Projects
                 <li>Generated video/HTML visualizations for policy testing</li>
             </ul>
         </div>
-        <a href="https://github.com/pranavreddy23/MJX_RL.git" class="project-link">View Project →</a>
+        <a href="https://github.com/pranavdoma/MJX_RL" class="project-link">View Project →</a>
     </div>
 </div>
 
@@ -42,7 +78,7 @@ title: Projects
                 <li>Built custom CUDA conv2D kernels on image data sourced from OpenCV</li>
             </ul>
         </div>
-        <a href="https://github.com/pranavreddy23/cuda-practice" class="project-link">View Project →</a>
+        <a href="https://github.com/pranavdoma/cuda-practice" class="project-link">View Project →</a>
     </div>
 </div>
 
@@ -105,6 +141,6 @@ title: Projects
         <li>Ran models on NYU’s HPC (Slurm + Singularity)</li>
         </ul>
     </div>
-    <a href="https://github.com/pranavreddy23/Forecasting-Stock-Price" class="project-link">View Project →</a> <!-- Add GitHub or video link here --></p>
+    <a href="https://github.com/pranavdoma/Forecasting-Stock-Price" class="project-link">View Project →</a>
   </div>
 </div>

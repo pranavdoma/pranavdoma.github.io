@@ -1,31 +1,77 @@
 ---
 layout: home
 title: Home
-profile_image: assets/images/profile/profile.jpg
+profile_image: /assets/images/profile/profile.jpg
+role: Robotics and autonomous systems
+affiliation: HCLTech America
+degree: M.S. Computer Engineering, New York University
 show_contact: true
 ---
 
-<h1>Hi, I'm Pranav</h1>
+<h2 id="about">About</h2>
 <p>
-    Perception, compute, and control: the holy trinity, as far as I'm concerned. The interesting part is getting all three to work together on a real system, with real limits on latency, safety, and compute. I like building things end to end, then figuring out why they behave differently on hardware than they did on paper.
+    I work on autonomous systems in which perception, planning, and control have to hold together on a real machine. Latency, safety, and compute are part of the problem. I am a robotics engineer at <a href="https://www.hcltech.com/">HCLTech America</a>, and I completed an M.S. in Computer Engineering at <a href="https://engineering.nyu.edu/">New York University</a>. At NYU I was an assistant research scientist in the Agile Safe Autonomous Systems Lab, working on language-guided planning and agentic vehicle control.
+</p>
+<p>
+    The work I care about now sits between end-to-end driving and simulation that keeps metric geometry. In the <a href="https://github.com/autowarefoundation/vision_pilot">Autoware Foundation</a> I develop <a href="https://github.com/autowarefoundation/vision_pilot/commits?author=pranavdoma">VisionPilot</a>, an open-source Level-2 assistance stack that estimates the road from a single front camera. With collaborators at HCLTech I coauthored <a href="https://hcltech-robotics.github.io/synairg/">SynAirG</a>, a geometry-first generator of bronchoscopy worlds, and gave the spotlight talk at the IROS 2026 SurgTwin workshop. Earlier papers, with the NYU lab, study agentic control of high-dynamic maneuvers and planners that accept instructions in natural language.
 </p>
 
-<p>
-    I completed my Master's in Computer Engineering at <strong>New York University</strong>, where I worked on robotics, planning, and learning-enabled control. Before that, I studied Electrical Engineering at <strong>SVNIT Surat</strong>.
-</p>
+<h2 id="interests">Research interests</h2>
+<ul class="interests">
+    <li>End-to-end driving and perception that fit on vehicle hardware</li>
+    <li>Simulation substrates whose geometry stays consistent with the source scan</li>
+    <li>Language and agentic models used as controllers, checked against physics</li>
+    <li>Humanoid teleoperation, and the data it produces for later learning</li>
+</ul>
 
-<p>
-    I'm a robotics generalist at <strong>HCLTech America</strong>, working across autonomous systems and robotics. A lot of the work is getting the pieces to fit, then finding out where they don't once they meet real-world constraints.
-</p>
+<h2 id="news">News</h2>
+<ul class="news">
+    <li>
+        <span class="when">Sep 2026</span>
+        <span>Spotlight talk on SynAirG at the <a href="https://utkauraslab.github.io/surgtwin-workshop.github.io/">SurgTwin</a> workshop, IROS 2026.</span>
+    </li>
+    <li>
+        <span class="when">Jul 2026</span>
+        <span>Preprint on immersive humanoid teleoperation with VR and language-assisted locomotion. <a href="https://arxiv.org/abs/2607.07430">arXiv:2607.07430</a>.</span>
+    </li>
+    <li>
+        <span class="when">Feb 2026</span>
+        <span>Joined HCLTech America, working on end-to-end driving and physical AI.</span>
+    </li>
+    <li>
+        <span class="when">Oct 2025</span>
+        <span>ManeuverGPT presented at IROS 2025. <a href="https://ieeexplore.ieee.org/document/11246539">IEEE</a>.</span>
+    </li>
+</ul>
 
-<p>
-    I'm part of Autoware's <strong>VisionPilot project</strong>. The project is on <a href="https://github.com/autowarefoundation/vision_pilot">GitHub</a>, and you can browse my <a href="https://github.com/autowarefoundation/vision_pilot/commits?author=pranavdoma">Autoware contributions</a> there too.
-</p>
+<h2 id="publications">Selected publications</h2>
+<div class="pub-list">
+    {% for pub in site.data.publications %}
+        {% if pub.selected %}
+            {% include pub-entry.html pub=pub %}
+        {% endif %}
+    {% endfor %}
+</div>
+<p class="more-link"><a href="{{ '/pages/publications/' | relative_url }}">All publications</a> · <a href="{{ '/assets/publications.bib' | relative_url }}">BibTeX</a></p>
 
-<p>
-    Sports are a year-round thing for me: NFL Sundays for the Bears and Giants, and when MLB season rolls around, I'm rooting for the Yankees and Cubs. I'm always up for cricket, tennis, or volleyball too. Add pizza, a good movie, or a rabbit hole about geopolitics or deep tech and I'm set.
-</p>
-
-<p>
-    Want to talk robotics, systems, sports, or pizza? Get in touch.
-</p>
+<h2 id="demonstrations">Demonstrations</h2>
+<div class="videos-grid">
+    <figure class="video-card featured">
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/SJTqAg_csXw" title="Drive L2 Launch demonstration - IAA Transportation Sep 2026" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <figcaption>Drive L2 launch demonstration, IAA Transportation, September 2026.</figcaption>
+    </figure>
+    <figure class="video-card">
+        <div class="video-container">
+            <iframe src="https://player.vimeo.com/video/1154119806" title="AutoSpeed with ObjectFinder" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <figcaption>AutoSpeed with ObjectFinder. Onboard driving perception and longitudinal control.</figcaption>
+    </figure>
+    <figure class="video-card">
+        <div class="video-container">
+            <iframe src="https://player.vimeo.com/video/1154119886" title="Quanty" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <figcaption>Quanty.</figcaption>
+    </figure>
+</div>

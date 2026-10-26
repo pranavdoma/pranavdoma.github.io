@@ -1,5 +1,5 @@
 title: Pranav Doma
-description: Robotics, Real-time Systems, and High-Performance Computing
+description: Research in autonomous driving, simulation for robot learning, and language-guided control.
 url: https://pranavdoma.github.io
 author: Pranav Doma
 email: pd2365@nyu.edu
@@ -12,21 +12,19 @@ exclude: [README.md]
 
 # Theme settings
 theme_settings:
-  # Colors
   colors:
-    primary: "#00a8e8"
-    background_dark: "#121212"
-    background_card: "#1e1e1e"
-    text_primary: "#ffffff"
-    text_secondary: "#b3b3b3"
+    primary: "#1e3a5f"
+    background: "#f7f5f2"
+    background_card: "#fffcf9"
+    text_primary: "#1c1917"
+    text_secondary: "#5e584f"
 
 # Social links
 social_links:
   github: pranavdoma
   linkedin: pranavr0323
-  # Add your Google Scholar ID (the value after `user=` in your scholar URL)
-  # Example: if your profile is https://scholar.google.com/citations?user=ABC123, set google_scholar: ABC123
   google_scholar: jd3oeWUAAAAJ
+  x: Pranavdoma0323
 
 # Collections
 collections:

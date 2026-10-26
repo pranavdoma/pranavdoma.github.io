@@ -1,87 +1,72 @@
 .navbar {
-    background: rgba($background-dark, 0.95);
+    background: rgba(247, 245, 242, 0.94);
     backdrop-filter: blur(10px);
-    position: fixed;
+    position: sticky;
     top: 0;
-    left: 0;
-    right: 0;
     z-index: 1000;
-    height: $nav-height;
-    border-bottom: 1px solid rgba($color-darkest, 0.3);
+    border-bottom: 1px solid $line;
 }
 
 .nav-container {
     max-width: $max-width;
     margin: 0 auto;
-    padding: 0 20px;
-    height: 100%;
+    padding: 0 28px;
+    min-height: $nav-height;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 24px;
 }
 
 .nav-brand {
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-family: $serif;
+    font-size: 1.15rem;
+    font-weight: 400;
     color: $text-primary;
     text-decoration: none;
-    transition: color 0.3s ease;
-    
+    letter-spacing: 0;
+
     &:hover {
-        color: $color-lightest;
+        color: $primary-color;
+        text-decoration: none;
     }
 }
 
 .nav-links {
     display: flex;
-    gap: 30px;
-    margin-left: auto; // This pushes links to the right
-    
+    gap: 22px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
     a {
-        color: $text-primary;
+        font-family: $sans;
+        color: $text-secondary;
         text-decoration: none;
-        font-weight: 500; // Semi-bold
-        transition: all 0.3s ease;
-        position: relative;
-        padding-bottom: 3px;
-        
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: -2px;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: linear-gradient(90deg, $color-medium, $color-light);
-            transition: width 0.3s ease;
-        }
-        
-        &:hover::after,
-        &.active::after {
-            width: 100%;
-        }
-        
-        &:hover {
-            color: $color-lightest;
-        }
-        
+        font-size: 0.92rem;
+        font-weight: 500;
+
+        &:hover,
         &.active {
-            color: $color-light;
+            color: $text-primary;
+            text-decoration: none;
+        }
+
+        &.active {
+            box-shadow: inset 0 -1px 0 $primary-color;
         }
     }
 }
 
-@media (max-width: 768px) {
-    .navbar {
-        .nav-container {
-            padding: 10px 20px;
-            height: auto;
-        }
-        
-        .nav-links {
-            margin-left: 0; // Reset margin for mobile
-            justify-content: flex-end; // Align links to the right in mobile
-            gap: 20px;
-        }
+@media (max-width: 720px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 12px 20px 10px;
+        gap: 8px;
+    }
+
+    .nav-links {
+        gap: 14px 16px;
+        justify-content: flex-start;
     }
 }
