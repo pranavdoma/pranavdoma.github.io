@@ -1,3 +1,49 @@
+- id: iwibench
+  title: "IWIBench: Evaluating Gradient-Free Model Driven Intraweight Injection"
+  authors:
+    - name: Chris von Csefalvay
+    - name: Pranav Doma
+      me: true
+    - name: Achyuthan Unni Krishnan
+    - name: Tamas Foldi
+  venue: "alphaXiv preprint"
+  year: 2026
+  image: /assets/images/publications/iwibench.jpg
+  image_alt: "IWIBench gradient-free intraweight injection benchmark architecture."
+  fit: contain
+  summary: "Benchmark for gradient-free intraweight injection, where an editor model patches another model's weights to change behaviour while preserving other capabilities across ten task families."
+  links:
+    - label: Paper
+      url: https://www.alphaxiv.org/abs/2611.iwibench-intra-weight-injection
+    - label: Project
+      url: https://hcltech-robotics.github.io/iwibench/
+    - label: Code
+      url: https://github.com/hcltech-robotics/iwibench
+  selected: true
+
+- id: simreadybench
+  title: "SimReadyBench: Evaluating models, harnesses and skills for simulation-ready asset generation"
+  authors:
+    - name: Chris von Csefalvay
+    - name: Pranav Doma
+      me: true
+    - name: Achyuthan Unni Krishnan
+    - name: Tamas Foldi
+  venue: "OpenUSD benchmark"
+  year: 2026
+  image: /assets/images/publications/simreadybench.png
+  image_alt: "SimReadyBench evaluation of simulation-ready OpenUSD asset generation."
+  fit: contain
+  summary: "Benchmark for how AI agents reconstruct simulation-ready 3D OpenUSD assets; reports formal, visual, and kinematic fidelity independently."
+  links:
+    - label: Project
+      url: https://hcltech-robotics.github.io/simreadybench/
+    - label: Code
+      url: https://github.com/hcltech-robotics/simreadybench
+    - label: Dataset
+      url: https://huggingface.co/datasets/hcltech-robotics/simreadybench
+  selected: true
+
 - id: synairg
   title: "Geometry-First Generative Worlds as Simulation Substrates in Bronchoscopy"
   authors:
