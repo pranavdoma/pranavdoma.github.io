@@ -1,12 +1,12 @@
 - id: iwibench
-  title: "IWIBench: Evaluating Gradient-Free Model Driven Intraweight Injection"
+  title: "IWIBench: Evaluating Gradient-Free Model Driven Intra-weight Injection"
   authors:
     - name: Chris von Csefalvay
     - name: Pranav Doma
       me: true
     - name: Achyuthan Unni Krishnan
     - name: Tamas Foldi
-  venue: "alphaXiv preprint"
+  venue: "arXiv preprint (2611.08647)"
   year: 2026
   image: /assets/images/publications/iwibench.jpg
   image_alt: "IWIBench gradient-free intraweight injection benchmark architecture."
@@ -14,7 +14,7 @@
   summary: "Benchmark for gradient-free intraweight injection, where an editor model patches another model's weights to change behaviour while preserving other capabilities across ten task families."
   links:
     - label: Paper
-      url: https://www.alphaxiv.org/abs/2611.iwibench-intra-weight-injection
+      url: https://arxiv.org/abs/2611.08647
     - label: Project
       url: https://hcltech-robotics.github.io/iwibench/
     - label: Code
