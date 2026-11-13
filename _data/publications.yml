@@ -14,6 +14,8 @@
       url: https://www.alphaxiv.org/abs/2611.weight-space-misfolding
     - label: PDF
       url: https://www.alphaxiv.org/abs/2611.weight-space-misfolding.pdf
+  image: /assets/images/publications/weight-space-misfolding.jpg
+  image_alt: "Routes by which a large editor model can interfere with the weights of medium and smaller target models, with the possible kinds of damage."
   selected: true
 
 - id: iwibench
