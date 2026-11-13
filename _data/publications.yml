@@ -1,3 +1,21 @@
+- id: weight-space-misfolding
+  title: "Weight Space Misfolding"
+  authors:
+    - name: Chris von Csefalvay
+    - name: Pranav Doma
+      me: true
+    - name: Achyuthan Unni Krishnan
+    - name: Tamas Foldi
+  venue: "alphaXiv preprint (2611.weight-space-misfolding)"
+  year: 2026
+  summary: "A follow up to IWIBench that studies unauthorised behaviour an editor model can write into another model's weights, and shows that a write that meets its target can still break controls the edit should leave alone."
+  links:
+    - label: Paper
+      url: https://www.alphaxiv.org/abs/2611.weight-space-misfolding
+    - label: PDF
+      url: https://www.alphaxiv.org/abs/2611.weight-space-misfolding.pdf
+  selected: true
+
 - id: iwibench
   title: "IWIBench: Evaluating Gradient-Free Model Driven Intra-weight Injection"
   authors:
